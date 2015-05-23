@@ -3,7 +3,7 @@ Portfolio site for ManicComputer
 
 ## Hello world!
 
-This is a site to hold various Front End Web Development Examples
+This is a site to hold various Front End Web Development Examples.
 
 My Github user page is at:
 https://github.com/maniccomputer/
