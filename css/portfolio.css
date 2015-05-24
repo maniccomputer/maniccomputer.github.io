@@ -1,12 +1,58 @@
 body {
-	background-color: #f1f1f1;
+	background-color: #fbfbfb;
 	padding-top: 50px;
 }
 
 #mcTitleLogo {
 	height: 50px;
+	padding: 0 10px 0 0;
 }
 
-.content {
+.navbar-inverse{
+	background-color: #eee;
+	border-color: #ddd;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #f9f9f9;
+  color: #333;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+  background-color: transparent;
+  color: #333;
+}
+
+.navbar-inverse-change {
+	background-color: #fff;
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+.jumbotron-js, footer {
 	padding: 40px 15px;
+	background-color: #fff;
+}
+
+
+.jumbotron-js .lead, footer, footer a, footer a:visited, footer a:active {
+	color: rgba(0,0,0,0.75);
+}
+
+.btn-primary {
+  background-color: #0E3386;
+  border-color: #02277a;
+  color: #fff;
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open > .dropdown-toggle.btn-primary {
+  background-color: #000e61;
+  border-color: #000c5f;
+  color: #fff;
+}
+
+footer {
+	min-height: 70px;
 }
