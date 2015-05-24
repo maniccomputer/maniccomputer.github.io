@@ -1,7 +1,12 @@
 body {
 	background-color: #f1f1f1;
+	padding-top: 50px;
 }
 
 #mcTitleLogo {
 	height: 50px;
+}
+
+.content {
+	padding: 40px 15px;
 }
