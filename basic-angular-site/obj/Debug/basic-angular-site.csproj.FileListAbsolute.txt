@@ -1,0 +1,5 @@
+C:\Users\SkattumR4\Documents\GitHub\basic-angular-site\bin\basic-angular-site.dll
+C:\Users\SkattumR4\Documents\GitHub\basic-angular-site\bin\basic-angular-site.pdb
+C:\Users\SkattumR4\Documents\GitHub\basic-angular-site\obj\Debug\basic-angular-site.csprojResolveAssemblyReference.cache
+C:\Users\SkattumR4\Documents\GitHub\basic-angular-site\obj\Debug\basic-angular-site.dll
+C:\Users\SkattumR4\Documents\GitHub\basic-angular-site\obj\Debug\basic-angular-site.pdb
