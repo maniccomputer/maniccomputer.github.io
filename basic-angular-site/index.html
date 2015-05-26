@@ -8,8 +8,8 @@
     <title>Basic Angular Site</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-      <link href="css/app.css" rel="stylesheet" />
+    <link href="assets/libs/bootstrap.min.css" rel="stylesheet">
+      <link href="assets/css/app.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,6 +37,10 @@
                       <li ng-class="{active:panel.isSelected(4)}">
                           <a href ng-click="panel.selectTab(4)">Pitching Stats</a>
                       </li>
+
+                      <li ng-class="{active:panel.isSelected(5)}">
+                          <a href ng-click="panel.selectTab(5)">Add Player</a>
+                      </li>
                   </ul>
                   <div class="panel" ng-show="panel.isSelected(1)">
                       <ul class="list-group">
@@ -44,10 +48,12 @@
                               <h3>
                                   <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
                                   <span ng-show="player.todaysLineup" class="lineup-order">{{player.lineupOrder}}</span>
-                                  <span class="player-name">{{player.name}}</span>
-                                  <span class="pull-right"><span class="player-number">{{player.number}}</span>
+                                  <span class="player-name">{{player.firstName}} {{player.lastName}}</span>
+                                  <span class="pull-right">
+                                      <span class="player-number">{{player.number}}</span>
                                       <span>&#124;</span>
-                                      <span class="player-position">{{player.position}}</span></span>
+                                      <span class="player-position">{{player.position}}</span>
+                                  </span>
                               </h3>
                           </li>
                       </ul>
@@ -57,10 +63,12 @@
                           <li class="list-group-item" ng-repeat="player in team.players | orderBy:['fieldPosition','position']">
                               <h3>
                                   <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
-                                  <span class="player-name">{{player.name}}</span>
-                                  <span class="pull-right"><span class="player-number">{{player.number}}</span>
+                                  <span class="player-name">{{player.firstName}} {{player.lastName}}</span>
+                                  <span class="pull-right">
+                                      <span class="player-number">{{player.number}}</span>
                                       <span>&#124;</span>
-                                      <span class="player-position">{{player.position}}</span></span>
+                                      <span class="player-position">{{player.position}}</span>
+                                  </span>
                               </h3>
                           </li>
                       </ul>
@@ -70,7 +78,7 @@
                           <li class="list-group-item" ng-repeat="player in team.players | orderBy:'-hittingStats[0].avg'" ng-hide="player.inactive">
                               <h3>
                                   <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
-                                  <span class="player-name">{{player.name}}</span>
+                                  <span class="player-name">{{player.firstName}} {{player.lastName}}</span>
                                   <span class="pull-right">
                                       <span class="player-stat">.{{player.hittingStats[0].avg}}</span>
                                       <span>&#47</span>
@@ -88,22 +96,27 @@
                               <h3>
                                   <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
                                   <span ng-show="player.todaysLineup" class="lineup-order">{{player.lineupOrder}}</span>
-                                  <span class="player-name">{{player.name}}</span>
-                                  <span class="pull-right"><span class="player-number">{{player.number}}</span>
+                                  <span class="player-name">{{player.firstName}} {{player.lastName}}</span>
+                                  <span class="pull-right">
+                                      <span class="player-number">{{player.number}}</span>
                                       <span>&#124;</span>
-                                      <span class="player-position">{{player.position}}</span></span>
+                                      <span class="player-position">{{player.position}}</span>
+                                  </span>
                               </h3>
                           </li>
                       </ul>
+                  </div>
+                  <div class="panel" ng-show="panel.isSelected(5)">
+                      <mc-add-player></mc-add-player>
                   </div>
               </section>
           </div>
       </div>
     <!--JS Files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="assets/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/angular.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
 
