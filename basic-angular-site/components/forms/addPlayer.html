@@ -1,0 +1,61 @@
+﻿<form name="addPlayerForm" ng-submit="addPlayerCtrl.addPlayer(team.players)">
+    <div class="add-players-list">
+        <ul class="list-group">
+            <h4>Current Players:</h4>
+            <li class="list-group-item" ng-repeat="player in team.players | orderBy:'lastName'">
+                <div>
+                    <span class="player-name">{{player.firstName}} {{player.lastName}}</span>
+                    <span class="pull-right">
+                        <span class="player-number">{{player.number}}</span>
+                        <span>&#124;</span>
+                        <span class="player-position">{{player.position}}</span>
+                    </span>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>
+                    <span class="player-name">{{addPlayerCtrl.newPlayer.firstName}} {{addPlayerCtrl.newPlayer.lastName}}</span>
+                    <span class="pull-right">
+                        <span class="player-number">{{addPlayerCtrl.newPlayer.number}}</span>
+                        <span>&#124;</span>
+                        <span class="player-position">{{addPlayerCtrl.newPlayer.position}}</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="add-players-form">
+
+        <h4>Add a Player</h4>
+
+        <div class="input-group">
+            <label>First Name: </label>
+            <input ng-model="addPlayerCtrl.newPlayer.firstName" type="text" />
+        </div>
+        <div class="input-group">
+            <label>Last Name: </label>
+            <input ng-model="addPlayerCtrl.newPlayer.lastName" type="text" />
+        </div>
+        <div class="input-group">
+            <label>Jersey Number: </label>
+            <input ng-model="addPlayerCtrl.newPlayer.number" type="number" />
+        </div>
+        <div class="input-group">
+            <label>Position: </label>
+            <select ng-model="addPlayerCtrl.newPlayer.position">
+                <option value="P">Pitcher</option>
+                <option value="C">Catcher</option>
+                <option value="1B">First Base</option>
+                <option value="2B">Second Base</option>
+                <option value="SS">Short Stop</option>
+                <option value="3B">Third Base</option>
+                <option value="LF">Left Field</option>
+                <option value="CF">Center Field</option>
+                <option value="RF">Right Field</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" />
+
+    </div>
+</form>

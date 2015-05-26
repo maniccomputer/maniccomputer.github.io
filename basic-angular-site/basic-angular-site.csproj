@@ -57,78 +57,77 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\app.css" />
-    <Content Include="css\bootstrap-theme.css" />
-    <Content Include="css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\bootstrap.min.css" />
-    <Content Include="images\aAlcantara-t.png" />
-    <Content Include="images\aAlcantara.png" />
-    <Content Include="images\aRizzo-t.png" />
-    <Content Include="images\aRizzo.png" />
-    <Content Include="images\aRussell-t.png" />
-    <Content Include="images\aRussell.png" />
-    <Content Include="images\cCoghlan-t.png" />
-    <Content Include="images\cCoghlan.png" />
-    <Content Include="images\dFowler-t.png" />
-    <Content Include="images\dFowler.png" />
-    <Content Include="images\dRoss-t.png" />
-    <Content Include="images\dRoss.png" />
-    <Content Include="images\eJackson-t.png" />
-    <Content Include="images\eJackson.png" />
-    <Content Include="images\hRondon-t.png" />
-    <Content Include="images\hRondon.png" />
-    <Content Include="images\jArrieta-t.png" />
-    <Content Include="images\jArrieta.png" />
-    <Content Include="images\jBaez-t.png" />
-    <Content Include="images\jBaez.png" />
-    <Content Include="images\jGrimm-t.png" />
-    <Content Include="images\jGrimm.png" />
-    <Content Include="images\jHammel-t.png" />
-    <Content Include="images\jHammel.png" />
-    <Content Include="images\jHerrera-t.png" />
-    <Content Include="images\jHerrera.png" />
-    <Content Include="images\jLake-t.png" />
-    <Content Include="images\jLake.png" />
-    <Content Include="images\jLester-t.png" />
-    <Content Include="images\jLester.png" />
-    <Content Include="images\jMotte-t.png" />
-    <Content Include="images\jMotte.png" />
-    <Content Include="images\jRussell-t.png" />
-    <Content Include="images\jRussell.png" />
-    <Content Include="images\jSoler-t.png" />
-    <Content Include="images\jSoler.png" />
-    <Content Include="images\kBryant-t.png" />
-    <Content Include="images\kBryant.png" />
-    <Content Include="images\kHendricks-t.png" />
-    <Content Include="images\kHendricks.png" />
-    <Content Include="images\mBaxter-t.png" />
-    <Content Include="images\mBaxter.png" />
-    <Content Include="images\mMontero-t.png" />
-    <Content Include="images\mMontero.png" />
-    <Content Include="images\pStrop-t.png" />
-    <Content Include="images\pStrop.png" />
-    <Content Include="images\sCastro-t.png" />
-    <Content Include="images\sCastro.png" />
-    <Content Include="images\tWada-t.png" />
-    <Content Include="images\tWada.png" />
-    <Content Include="images\tWood-t.png" />
-    <Content Include="images\tWood.png" />
-    <Content Include="images\zRosscup-t.png" />
-    <Content Include="images\zRosscup.png" />
+    <Content Include="assets\css\app.css" />
+    <Content Include="assets\libs\bootstrap.css" />
+    <Content Include="assets\libs\bootstrap.min.css" />
+    <Content Include="assets\img\aAlcantara-t.png" />
+    <Content Include="assets\img\aAlcantara.png" />
+    <Content Include="assets\img\aRizzo-t.png" />
+    <Content Include="assets\img\aRizzo.png" />
+    <Content Include="assets\img\aRussell-t.png" />
+    <Content Include="assets\img\aRussell.png" />
+    <Content Include="assets\img\cCoghlan-t.png" />
+    <Content Include="assets\img\cCoghlan.png" />
+    <Content Include="assets\img\dFowler-t.png" />
+    <Content Include="assets\img\dFowler.png" />
+    <Content Include="assets\img\dRoss-t.png" />
+    <Content Include="assets\img\dRoss.png" />
+    <Content Include="assets\img\eJackson-t.png" />
+    <Content Include="assets\img\eJackson.png" />
+    <Content Include="assets\img\hRondon-t.png" />
+    <Content Include="assets\img\hRondon.png" />
+    <Content Include="assets\img\jArrieta-t.png" />
+    <Content Include="assets\img\jArrieta.png" />
+    <Content Include="assets\img\jBaez-t.png" />
+    <Content Include="assets\img\jBaez.png" />
+    <Content Include="assets\img\jGrimm-t.png" />
+    <Content Include="assets\img\jGrimm.png" />
+    <Content Include="assets\img\jHammel-t.png" />
+    <Content Include="assets\img\jHammel.png" />
+    <Content Include="assets\img\jHerrera-t.png" />
+    <Content Include="assets\img\jHerrera.png" />
+    <Content Include="assets\img\jLake-t.png" />
+    <Content Include="assets\img\jLake.png" />
+    <Content Include="assets\img\jLester-t.png" />
+    <Content Include="assets\img\jLester.png" />
+    <Content Include="assets\img\jMotte-t.png" />
+    <Content Include="assets\img\jMotte.png" />
+    <Content Include="assets\img\jRussell-t.png" />
+    <Content Include="assets\img\jRussell.png" />
+    <Content Include="assets\img\jSoler-t.png" />
+    <Content Include="assets\img\jSoler.png" />
+    <Content Include="assets\img\kBryant-t.png" />
+    <Content Include="assets\img\kBryant.png" />
+    <Content Include="assets\img\kHendricks-t.png" />
+    <Content Include="assets\img\kHendricks.png" />
+    <Content Include="assets\img\mBaxter-t.png" />
+    <Content Include="assets\img\mBaxter.png" />
+    <Content Include="assets\img\mMontero-t.png" />
+    <Content Include="assets\img\mMontero.png" />
+    <Content Include="assets\img\pStrop-t.png" />
+    <Content Include="assets\img\pStrop.png" />
+    <Content Include="assets\img\sCastro-t.png" />
+    <Content Include="assets\img\sCastro.png" />
+    <Content Include="assets\img\tWada-t.png" />
+    <Content Include="assets\img\tWada.png" />
+    <Content Include="assets\img\tWood-t.png" />
+    <Content Include="assets\img\tWood.png" />
+    <Content Include="assets\img\zRosscup-t.png" />
+    <Content Include="assets\img\zRosscup.png" />
+    <Content Include="components\forms\addPlayer.html" />
+    <Content Include="components\forms\addPlayer.js" />
     <Content Include="index.html" />
-    <Content Include="js\angular.min.js" />
-    <Content Include="js\app.js" />
-    <Content Include="js\bootstrap.js" />
-    <Content Include="js\bootstrap.min.js" />
+    <Content Include="assets\libs\angular.min.js" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\libs\bootstrap.js" />
+    <Content Include="assets\libs\bootstrap.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\bootstrap-theme.css.map" />
-    <Content Include="css\bootstrap.css.map" />
+    <Content Include="assets\libs\bootstrap.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -137,7 +136,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="fonts\" />
+    <Folder Include="assets\fonts\" />
+    <Folder Include="shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

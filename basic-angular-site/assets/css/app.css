@@ -1,0 +1,24 @@
+﻿body {
+}
+
+.profile-photo {
+    height: 70px;
+    float: left;
+    margin-top: -25px;
+}
+
+.add-players-form, .add-players-list {
+    display: inline-block;
+}
+
+.add-players-list {
+    float: left;
+}
+
+.add-players-form {
+    float: right;
+}
+
+.player-name {
+    padding-right: 15px;
+}
