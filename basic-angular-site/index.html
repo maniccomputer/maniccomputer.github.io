@@ -1,16 +1,15 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="gemStore">
+<html lang="en" ng-app="cubsTeam">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ManicComputer's Portfolio</title>
+    <title>Basic Angular Site</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/portfolio.css">
-
+      <link href="css/app.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,8 +18,87 @@
     <![endif]-->
   </head>
   <body>
-    <h1>{{"Hello, Angular!"}}</h1>
-
+      <div class="container">
+          <div>
+              <h1>Cubs Roster</h1>
+          </div>
+          <div ng-controller="TeamController as team">
+              <section ng-controller="PanelController as panel">
+                  <ul class="nav nav-pills">
+                      <li ng-class="{active:panel.isSelected(1)}">
+                          <a href ng-click="panel.selectTab(1)">Starting Lineup</a>
+                      </li>
+                      <li ng-class="{active:panel.isSelected(2)}">
+                          <a href ng-click="panel.selectTab(2)">40 Man Roster</a>
+                      </li>
+                      <li ng-class="{active:panel.isSelected(3)}">
+                          <a href ng-click="panel.selectTab(3)">Hitting Stats</a>
+                      </li>
+                      <li ng-class="{active:panel.isSelected(4)}">
+                          <a href ng-click="panel.selectTab(4)">Pitching Stats</a>
+                      </li>
+                  </ul>
+                  <div class="panel" ng-show="panel.isSelected(1)">
+                      <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="player in team.players | orderBy:'lineupOrder'" ng-show="player.todaysLineup">
+                              <h3>
+                                  <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
+                                  <span ng-show="player.todaysLineup" class="lineup-order">{{player.lineupOrder}}</span>
+                                  <span class="player-name">{{player.name}}</span>
+                                  <span class="pull-right"><span class="player-number">{{player.number}}</span>
+                                      <span>&#124;</span>
+                                      <span class="player-position">{{player.position}}</span></span>
+                              </h3>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="panel" ng-show="panel.isSelected(2)">
+                      <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="player in team.players | orderBy:['fieldPosition','position']">
+                              <h3>
+                                  <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
+                                  <span class="player-name">{{player.name}}</span>
+                                  <span class="pull-right"><span class="player-number">{{player.number}}</span>
+                                      <span>&#124;</span>
+                                      <span class="player-position">{{player.position}}</span></span>
+                              </h3>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="panel" ng-show="panel.isSelected(3)">
+                      <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="player in team.players | orderBy:'-hittingStats[0].avg'" ng-hide="player.inactive">
+                              <h3>
+                                  <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
+                                  <span class="player-name">{{player.name}}</span>
+                                  <span class="pull-right">
+                                      <span class="player-stat">.{{player.hittingStats[0].avg}}</span>
+                                      <span>&#47</span>
+                                      <span class="player-stat">.{{player.hittingStats[0].obp}}</span>
+                                      <span>&#47</span>
+                                      <span class="player-stat">.{{player.hittingStats[0].slg}}</span>
+                                  </span>
+                              </h3>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="panel" ng-show="panel.isSelected(4)">
+                      <ul class="list-group">
+                          <li class="list-group-item" ng-repeat="player in team.players | orderBy:'lineupOrder'" ng-hide="player.inactive">
+                              <h3>
+                                  <img class="profile-photo" ng-src="{{player.images[0].thumb}}" />
+                                  <span ng-show="player.todaysLineup" class="lineup-order">{{player.lineupOrder}}</span>
+                                  <span class="player-name">{{player.name}}</span>
+                                  <span class="pull-right"><span class="player-number">{{player.number}}</span>
+                                      <span>&#124;</span>
+                                      <span class="player-position">{{player.position}}</span></span>
+                              </h3>
+                          </li>
+                      </ul>
+                  </div>
+              </section>
+          </div>
+      </div>
     <!--JS Files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
