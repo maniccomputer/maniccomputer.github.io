@@ -121,6 +121,7 @@
     <Content Include="assets\js\app.js" />
     <Content Include="assets\libs\bootstrap.js" />
     <Content Include="assets\libs\bootstrap.min.js" />
+    <Content Include="shared\players\players.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\libs\bootstrap.css.map" />
+    <Content Include="shared\players\players.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -137,7 +139,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\fonts\" />
-    <Folder Include="shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
